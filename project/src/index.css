@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply transition-colors duration-300;
+  }
+
+  .light {
+    /* styles.css or any other CSS file */
+@apply bg-[#ededed] text-black; /* Replace #clr with your actual hex code */
+
+  }
+
+  .dark {
+    @apply bg-black text-white;
+  }
+
+  .card {
+    @apply bg-white dark:bg-black/50 border border-gray-200 dark:border-red-600/20
+           transition-colors duration-300;
+  }
+
+  .text-secondary {
+    @apply text-gray-600 dark:text-gray-400;
+  }
+
+  .border-theme {
+    @apply border-gray-200 dark:border-red-600/20;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-red-600/20 rounded-full hover:bg-red-600/30 transition-colors;
+}
+.light
+.bg-black\/50 {
+    background-color: #ededed;
+}
+.light
+.text-gray-300 {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0);
+}
+
+.light
+.text-gray-400 {
+    --tw-text-opacity: 1;
+    color: rgb(42 44 47);
+}
